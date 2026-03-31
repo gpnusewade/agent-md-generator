@@ -1,0 +1,19 @@
+{
+  "name": "agent-md-generator",
+  "version": "1.0.0",
+  "description": "Generate Agent.md files with interactive CLI",
+  "main": "src/index.js",
+  "bin": {
+    "agent-gen": "./bin/agent-gen.js"
+  },
+  "scripts": {
+    "start": "node bin/agent-gen.js",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": ["agent", "markdown", "generator", "cli"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
+}
