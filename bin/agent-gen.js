@@ -56,7 +56,7 @@ function printHelp() {
 
  Options:
    -c, --config <file>      Path to JSON configuration file
-   -o, --output <path>      Output path for agent.md (default: ./agent.md)
+   -o, --output <path>      Output path for AGENTS.md (default: ./AGENTS.md)
    -t, --template <name>    Use a preset template
    -p, --project <path>     Project directory to read config from (default: cwd)
    -a, --auto-detect        Auto-detect and read project config (Node.js/Python/Go/Rust)
@@ -118,7 +118,7 @@ async function main() {
   }
 
   const configPath = parsedArgs.config || null;
-  const outputPath = parsedArgs.output || path.join(process.cwd(), 'agent.md');
+  const outputPath = parsedArgs.output || path.join(process.cwd(), 'AGENTS.md');
   const templateId = parsedArgs.template || null;
   const autoDetect = parsedArgs.autoDetect || false;
   
